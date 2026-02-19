@@ -41,11 +41,11 @@ class AtletaController {
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-    
+
 
 
     public function editar($id) {
-        return $this->atleta->buscarPorId($id);
+        return $this->atleta->buscarPorId($id); 
     }
 
     public function atualizar($id, $nome, $idade, $esporte, $telefone, $email) {
